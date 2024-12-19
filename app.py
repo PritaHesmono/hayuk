@@ -40,7 +40,7 @@ if uploaded_file is not None:
 
         # Kolom untuk layanan_sosial_gizi
         'RT Air Minum Layak',
-        '	RT Sanitasi Layak'
+        'RT Sanitasi Layak'
     ]
 
     # Memastikan kolom yang dibutuhkan ada di DataFrame
