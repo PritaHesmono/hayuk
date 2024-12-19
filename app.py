@@ -32,20 +32,20 @@ if uploaded_file is not None:
     # Kolom yang digunakan untuk prediksi
     selected_columns = [
         # Kolom untuk layanan_balita
-        'Bayi usia kurang dari 6 bulan mendapat air susu ibu (ASI) eksklusif',
-        'Anak usia 6-23 bulan yang mendapat Makanan Pendamping Air Susu Ibu (MP-ASI)',
-        'Anak berusia di bawah lima tahun (balita) gizi buruk yang mendapat pelayanan tata laksana gizi buruk',
-        'Anak berusia di bawah lima tahun (balita) yang dipantau pertumbuhan dan perkembangannya',
-        'Anak berusia di bawah lima tahun (balita) gizi kurang yang mendapat tambahan asupan gizi',
-        'Balita yang memperoleh imunisasi dasar lengkap',
+        'Bayi 0-11 Bulan Imunisasi Lengkap',
+        'Anak 6-59 Bulan Dapat Vit A',
+        'Balita Dapat Zinc',
+        'Pendek (anak)',
+        'Sangat Pendek (anak)',
 
         # Kolom untuk layanan_ibu_hamil
-        'Ibu hamil Kurang Energi Kronik (KEK) yang mendapatkan tambahan asupan gizi',
-        'Ibu hamil yang mengonsumsi Tablet Tambah Darah (TTD) minimal 90 tablet selama masa kehamilan',
+        'Bumil KEK dapat PMT',
+        'Bumil dapat IFA',
+        'Bumil Konseling Gizi'
 
         # Kolom untuk layanan_sosial_gizi
-        'Kelompok Keluarga Penerima Manfaat (KPM) Program Keluarga Harapan (PKH) yang mengikuti Pertemuan Peningkatan Kemampuan Keluarga (P2K2) dengan modul kesehatan dan gizi',
-        'Keluarga Penerima Manfaat (KPM) dengan ibu hamil, ibu menyusui, dan baduta yang menerima variasi bantuan pangan selain beras dan telur'
+        #'Kelompok Keluarga Penerima Manfaat (KPM) Program Keluarga Harapan (PKH) yang mengikuti Pertemuan Peningkatan Kemampuan Keluarga (P2K2) dengan modul kesehatan dan gizi',
+        #Keluarga Penerima Manfaat (KPM) dengan ibu hamil, ibu menyusui, dan baduta yang menerima variasi bantuan pangan selain beras dan telur'
     ]
 
     # Memastikan kolom yang dibutuhkan ada di DataFrame
