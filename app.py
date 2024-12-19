@@ -19,12 +19,15 @@ model, scaler = load_model_and_scaler()
 # Judul Aplikasi
 st.title("Prediksi Stunting dengan Model Machine Learning")
 
-# Upload file Excel
-uploaded_file = st.file_uploader("Upload file ", type=["xlsx", "xls"])
+# Upload file
+uploaded_file = st.file_uploader("Upload file ", type=["xlsx", "xls", "csv"])
 
 if uploaded_file is not None:
-    # Membaca data dari file Excel
-    df = pd.read_excel(uploaded_file)
+    # Memeriksa jenis file dan membaca data
+    if uploaded_file.name.endswith('.csv'):
+        df = pd.read_csv(uploaded_file)
+    else:
+        df = pd.read_excel(uploaded_file)
 
     # Kolom yang digunakan untuk prediksi
     selected_columns = [
