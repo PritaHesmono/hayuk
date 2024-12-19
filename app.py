@@ -17,10 +17,10 @@ def load_model_and_scaler():
 model, scaler = load_model_and_scaler()
 
 # Judul Aplikasi
-st.title("Prediksi Model Machine Learning dengan Data")
+st.title("Prediksi Stunting dengan Model Machine Learning")
 
 # Upload file Excel
-uploaded_file = st.file_uploader("Upload file ", type=["xlsx", "xls", "csv"])
+uploaded_file = st.file_uploader("Upload file ", type=["xlsx", "xls"])
 
 if uploaded_file is not None:
     # Membaca data dari file Excel
