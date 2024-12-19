@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Angka Stunting</title>
+    <link rel="stylesheet" href="predictpage.css"> <!-- Menghubungkan file CSS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>PREDIKSI ANGKA STUNTING</h1>
+    <p class="description">
+        Stunting adalah kondisi di mana anak mengalami pertumbuhan yang terhambat akibat kekurangan gizi kronis, terutama pada 1000 hari pertama kehidupan. 
+        Penyebab stunting dapat meliputi kurangnya asupan gizi, infeksi berulang, dan faktor lingkungan.
+    </p>
+
+    <div class="upload-container">
+        <form id="upload-form" action="/predict" method="POST" enctype="multipart/form-data">
+            <label for="data-upload">Unggah Data (CSV, XLS, XLSX):</label><br>
+            <input type="file" id="data-upload" name="file" accept=".csv, .xls, .xlsx" required><br>
+            <button type="submit">Unggah</button>
+        </form>
+    </div>
+
+    <div id="prediction-results-container">
+        <h2>Hasil Prediksi</h2>
+        <div id="prediction-results">
+            {% if result %}
+                <ul>
+                {% for item in result %}
+                    <li>Tahun: {{ item.tahun }}, Tahun Prediksi: {{ item.predicted_year }}, Persentase Prediksi: {{ item.predicted_percentage }}%</li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                Hasil prediksi akan ditampilkan di sini.
+            {% endif %}
+        </div>
+    </div>
+
+</body>
+</html>

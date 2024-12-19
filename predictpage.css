@@ -1,0 +1,62 @@
+body {
+    background-color: #f0f0f0; /* Latar belakang abu-abu muda */
+    color: #333; /* Warna teks gelap */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    font-size: 50px; /* Ukuran font untuk judul */
+    margin-bottom: 10px;
+    color: #ff69b4; /* Warna judul */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.description {
+    font-size: 18px; /* Ukuran font untuk penjelasan */
+    margin-bottom: 30px;
+    color: #555; /* Warna teks penjelasan */
+    max-width: 800px; /* Lebar maksimum untuk penjelasan */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Monaco;
+}
+.upload-container {
+    background-color: white;
+    border-radius: 15px; /* Sudut tumpul */
+    padding: 30px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+input[type="file"] {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc; /* Border untuk input file */
+    border-radius: 5px; /* Sudut tumpul */
+    width: calc(100% - 22px); /* Mengatur lebar input file */
+}
+button {
+    background-color: #ffb6c1; /* Warna kalem */
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Jarak atas untuk tombol */
+    font-size: 18px; /* Ukuran font untuk tombol */
+}
+button:hover {
+    background-color: #ff69b4; /* Warna lebih gelap saat hover */
+}
+#prediction-results-container {
+    background-color: white; /* Latar belakang putih untuk hasil prediksi */
+    border-radius: 15px; /* Sudut tumpul */
+    padding: 20px;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:inset; }
