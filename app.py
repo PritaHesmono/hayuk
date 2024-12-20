@@ -73,7 +73,7 @@ if uploaded_file is not None:
             else:
                 st.write("Hasil Prediksi tidak membutuhkan unscaled karena ini klasifikasi.")
         except NotFittedError:
-            st.error("Model belum di-fit. Pastikan file model.pkl adalah hasil fit dari data yang sesuai.")
+            st.error("tidak ada hasil fit dari data yang sesuai.")
 
     else:
         # Jika kolom yang dibutuhkan tidak ada
